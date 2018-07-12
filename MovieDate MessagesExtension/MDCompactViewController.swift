@@ -13,8 +13,10 @@ class MessagesViewController: MSMessagesAppViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        roundedCorner.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var roundedCorner: UIButton!
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,5 +70,10 @@ class MessagesViewController: MSMessagesAppViewController {
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
-
+    
+    @IBAction func ChangeView(_ sender: UIButton) {
+        if self.presentationStyle == MSMessagesAppPresentationStyle.compact {
+            self.requestPresentationStyle(MSMessagesAppPresentationStyle.expanded)
+        }
+    }
 }

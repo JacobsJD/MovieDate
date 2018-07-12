@@ -10,9 +10,10 @@
 		282C44E520F7C0880002B9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282C44E420F7C0880002B9E5 /* Assets.xcassets */; };
 		282C44EC20F7C0880002B9E5 /* MovieDate MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 282C44EB20F7C0880002B9E5 /* MovieDate MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		282C44F120F7C0880002B9E5 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282C44F020F7C0880002B9E5 /* Messages.framework */; };
-		282C44F420F7C0880002B9E5 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C44F320F7C0880002B9E5 /* MessagesViewController.swift */; };
+		282C44F420F7C0880002B9E5 /* MDCompactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C44F320F7C0880002B9E5 /* MDCompactViewController.swift */; };
 		282C44F720F7C0880002B9E5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282C44F520F7C0880002B9E5 /* MainInterface.storyboard */; };
 		282C44F920F7C0890002B9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282C44F820F7C0890002B9E5 /* Assets.xcassets */; };
+		282C450520F800FF0002B9E5 /* MDExtendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C450420F800FF0002B9E5 /* MDExtendedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +46,11 @@
 		282C44E620F7C0880002B9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		282C44EB20F7C0880002B9E5 /* MovieDate MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MovieDate MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		282C44F020F7C0880002B9E5 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		282C44F320F7C0880002B9E5 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		282C44F320F7C0880002B9E5 /* MDCompactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDCompactViewController.swift; sourceTree = "<group>"; };
 		282C44F620F7C0880002B9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		282C44F820F7C0890002B9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		282C44FA20F7C0890002B9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		282C450420F800FF0002B9E5 /* MDExtendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDExtendedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +104,11 @@
 		282C44F220F7C0880002B9E5 /* MovieDate MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				282C44F320F7C0880002B9E5 /* MessagesViewController.swift */,
+				282C44F320F7C0880002B9E5 /* MDCompactViewController.swift */,
 				282C44F520F7C0880002B9E5 /* MainInterface.storyboard */,
 				282C44F820F7C0890002B9E5 /* Assets.xcassets */,
 				282C44FA20F7C0890002B9E5 /* Info.plist */,
+				282C450420F800FF0002B9E5 /* MDExtendedViewController.swift */,
 			);
 			path = "MovieDate MessagesExtension";
 			sourceTree = "<group>";
@@ -209,7 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				282C44F420F7C0880002B9E5 /* MessagesViewController.swift in Sources */,
+				282C44F420F7C0880002B9E5 /* MDCompactViewController.swift in Sources */,
+				282C450520F800FF0002B9E5 /* MDExtendedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
